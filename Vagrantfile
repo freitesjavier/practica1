@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "utn-devops-practica.localhost"
   config.vm.boot_timeout = 3600
   config.vm.provider "virtualbox" do |v|
-	v.name = "utn-devops-practica-grupo2"
+	v.name = "utn-devops-practica"
   end
   config.vm.synced_folder ".", "/vagrant"
   config.vm.provider "virtualbox" do |vb|
