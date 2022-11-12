@@ -39,17 +39,17 @@ fi
 ## aplicación
 
 # ruta raíz del servidor web
-APACHE_ROOT="/var/www"
+APACHE_ROOT="/var/www/"
 # ruta de la aplicación
-APP_PATH="$APACHE_ROOT/utn-devops-practica "
+APP_PATH="$APACHE_ROOT/practica1"
 
 # descargo la app del repositorio
 if [ ! -d "$APP_PATH" ]; then
-	sudo mkdir /var/www
+	sudo mkdir /var/www/
 	echo "clono el repositorio"
 	cd $APACHE_ROOT
 	sudo git clone https://github.com/freitesjavier/practica1
 	cd $APP_PATH
-	sudo git checkout unidad-1
+	sudo git checkout ensayos
 fi
 
